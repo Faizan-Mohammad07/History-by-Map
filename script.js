@@ -1,23 +1,32 @@
-var modal = document.getElementById("myModal");
+// Get all elements with the class "openModal"
+var modalLinks = document.querySelectorAll(".openModal");
 
-var link = document.getElementById("openModal");
+// Loop through each modal link to add event listeners
+modalLinks.forEach(function (link) {
+  link.addEventListener("click", function () {
+    var modalId = link.getAttribute("data-modal-id");
+    var modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = "block";
+    }
+  });
+});
 
-var closeBtn = document.getElementsByClassName("close")[0];
+// Get all elements with the class "modal"
+var modals = document.querySelectorAll(".modal");
 
-link.onclick = function () {
-  modal.style.display = "block";
-};
-
-closeBtn.onclick = function () {
-  modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+// Loop through each modal to add close functionality
+modals.forEach(function (modal) {
+  var closeButton = modal.querySelector(".close");
+  if (closeButton) {
+    closeButton.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
   }
-};
 
-document.getElementById("closeModal").onclick = function () {
-  modal.style.display = "none";
-};
+  window.addEventListener("click", function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+});

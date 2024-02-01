@@ -11,30 +11,63 @@
   <body>
     <div class="nation-map">
       <div class="new-delhi Ncapital">
-        <a href="#" id="openModal">DELHI</a>
+        <a href="#" class="openModal" data-modal-id="modal1">DELHI</a>
       </div>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Modal Header</h2>
+      <div class="lucknow capital">
+        <a href="#" class="openModal" data-modal-id="modal1">Lucknow</a>
+      </div>
+      <div class="Agra city">
+        <a href="#" class="openModal" data-modal-id="modal1">Agra</a>
+      </div>
+      <div class="varanasi city">
+        <a href="#" class="openModal" data-modal-id="modal1">Varanasi</a>
+      </div>
+      <div class="jaipur capital">
+        <a href="#" class="openModal" data-modal-id="modal1">Jaipur</a>
+      </div>
+      <div class="ajmer city">
+        <a href="#" class="openModal" data-modal-id="modal1">Ajmer</a>
+      </div>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>NEW DELHI</h2>
+        </div>
+        <div class="modal-body">
+          <div>
+            <p>
+              New Delhi , historically known as Indraprastha, is the capital of
+              India and a part of the National Capital Territory of Delhi (NCT).
+              New Delhi is the seat of all three branches of the Government of
+              India, hosting the Rashtrapati Bhavan, Sansad Bhavan, and the
+              Supreme Court. New Delhi is a municipality within the NCT,
+              administered by the NDMC, which covers mostly Lutyens' Delhi and a
+              few adjacent areas. The municipal area is part of a larger
+              administrative district, the New Delhi district.
+            </p>
+            <p>
+              Until December 1911, Calcutta was the capital of India during the
+              British Rule. However, it had become the centre of the nationalist
+              movements since the late nineteenth century.
+            </p>
           </div>
-          <div class="modal-body">
-            <p>Some text in the modal..</p>
-            <p>Some more text in the modal to demonstrate the scrollbar..</p>
-          </div>
-          <div class="modal-footer">
-            <button id="closeModal">Close</button>
+          <div>
+            <img
+              class="modal-pic"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/India_Gate_in_New_Delhi_03-2016.jpg/800px-India_Gate_in_New_Delhi_03-2016.jpg"
+              alt="India Gate"
+            />
           </div>
         </div>
+        <div class="modal-footer">
+          <button id="closeModal">Close</button>
+          <button class="moreModel">More</button>
+        </div>
       </div>
-
-      <script src="script.js"></script>
-      <div class="lucknow capital"><a href="lucknow.html">Lucknow</a></div>
-      <div class="Agra city"><a href="Agra.html">Agra</a></div>
-      <div class="varanasi city"><a href="Varanasi.html">Varanasi</a></div>
-      <div class="jaipur capital"><a href="Jaipur.html">Jaipur</a></div>
-      <div class="ajmer city"><a href="Ajmer.html">Ajmer</a></div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
