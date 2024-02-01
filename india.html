@@ -10,7 +10,26 @@
   </head>
   <body>
     <div class="nation-map">
-      <div class="new-delhi Ncapital"><a href="Delhi.html">DELHI</a></div>
+      <div class="new-delhi Ncapital">
+        <a href="#" id="openModal">DELHI</a>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal..</p>
+            <p>Some more text in the modal to demonstrate the scrollbar..</p>
+          </div>
+          <div class="modal-footer">
+            <button id="closeModal">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
       <div class="lucknow capital"><a href="lucknow.html">Lucknow</a></div>
       <div class="Agra city"><a href="Agra.html">Agra</a></div>
       <div class="varanasi city"><a href="Varanasi.html">Varanasi</a></div>

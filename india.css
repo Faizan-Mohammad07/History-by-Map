@@ -17,6 +17,12 @@
 a {
   text-decoration: none;
   color: red;
+  background: none;
+  border: none;
+  font-size: inherit;
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
 }
 .lucknow {
   top: 33.8%;
