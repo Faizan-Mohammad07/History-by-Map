@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+.nation-map {
+  background: url(https://e0.pxfuel.com/wallpapers/438/282/desktop-wallpaper-india-map-india-map-in-2019-india-map-geography-map.jpg);
+  width: 850px;
+  height: 1015px;
+  position: relative;
+}

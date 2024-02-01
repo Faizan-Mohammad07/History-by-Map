@@ -1,0 +1,40 @@
+.Ncapital {
+  position: absolute;
+  font-size: 10px;
+}
+.city {
+  position: absolute;
+  font-size: 9px;
+}
+.capital {
+  position: absolute;
+  font-size: 10px;
+}
+.new-delhi {
+  top: 28.1%;
+  left: 30.31%;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+.lucknow {
+  top: 33.8%;
+  left: 40.9%;
+}
+.Agra {
+  top: 32.34%;
+  left: 36.14%;
+}
+.varanasi {
+  top: 38.17%;
+  left: 52%;
+}
+.jaipur {
+  top: 34.06%;
+  left: 26.54%;
+}
+.ajmer {
+  top: 35.54%;
+  left: 25.7%;
+}
