@@ -1,5 +1,7 @@
 body {
   margin: 0;
+}
+.content {
   display: flex;
   justify-content: center;
 }
@@ -22,7 +24,7 @@ body {
 }
 
 .modal-content {
-  background-color: #fefefe72;
+  background-color: #fefefe9e;
   backdrop-filter: blur(15px);
   margin: 15% auto;
   padding: 20px;
@@ -87,4 +89,33 @@ body {
   width: auto;
   border-radius: 5px;
   margin-left: 10px;
+}
+.header {
+  top: 0;
+  margin: 0;
+  padding: 10px;
+
+  position: sticky;
+  z-index: 2;
+  background: rgba(136, 136, 136, 0.419);
+  backdrop-filter: blur(15px);
+}
+.header-upper {
+  font-size: large;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-down {
+  margin: 10px 5px 5px;
+}
+.nav-link {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.nav-link:hover {
+  background: rgb(187, 187, 187);
+  transition: 0.2s;
 }
