@@ -1,7 +1,5 @@
-// Get all elements with the class "openModal"
 var modalLinks = document.querySelectorAll(".openModal");
 
-// Loop through each modal link to add event listeners
 modalLinks.forEach(function (link) {
   link.addEventListener("click", function () {
     var modalId = link.getAttribute("data-modal-id");
@@ -12,10 +10,8 @@ modalLinks.forEach(function (link) {
   });
 });
 
-// Get all elements with the class "modal"
 var modals = document.querySelectorAll(".modal");
 
-// Loop through each modal to add close functionality
 modals.forEach(function (modal) {
   var closeButton = modal.querySelector(".close");
   if (closeButton) {
@@ -29,4 +25,21 @@ modals.forEach(function (modal) {
       modal.style.display = "none";
     }
   });
+});
+document.getElementById("searchInput").addEventListener("input", function () {
+  var input, filter, dropdown, countries, a, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  dropdown = document.querySelector(".dropdown-content");
+  countries = dropdown.getElementsByTagName("a");
+
+  for (i = 0; i < countries.length; i++) {
+    a = countries[i];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a.style.display = "";
+    } else {
+      a.style.display = "none";
+    }
+  }
 });
