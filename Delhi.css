@@ -1,0 +1,20 @@
+.nation-map {
+  margin: 20px;
+  background: url(https://i.pinimg.com/736x/b4/d2/2e/b4d22e106f753436c9b99a35af2ab88d.jpg);
+  background-size: contain;
+  width: 1000px;
+  height: 944px;
+  position: relative;
+}
+.full-width-size-map {
+  width: 1450px;
+  height: 1369px;
+}
+.small-size-map {
+  width: 750px;
+  height: 708px;
+}
+.default-size-map {
+  width: 1000px;
+  height: 944px;
+}
